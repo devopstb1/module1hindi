@@ -1,0 +1,85 @@
+<style>
+.chat-icon-block {
+    position: relative;
+    /* width: 221px; */
+    float: right;
+    margin-right: 53px;
+    z-index: 3;
+}
+.chat-row.row2.male-guide-expression-11 .show-for-desktop .chat-icon {
+    /* background-position: -200px -643px; */
+    width: 211px;
+    height: 177px;
+    margin-top: 0px;
+}
+</style>
+    <div class="section quiz-section">
+            <div class="grid-x">
+                <div class="columns small-11 large-8 medium-10">
+                    <div class="grid-x">
+                        <div class="columns small-12 large-12 medium-10 hidden screentext1">
+							<div class="chat-row row2 guide-expression male-guide-expression-11">
+								<div class="chat-icon-block show-for-mobile">
+									<div class="img1 chat-icon chat-icon-1 mobile-male-guide-icon "><img src="resources/slide3/img/a5.png"></div> 
+								</div>
+								<div class="chat-callout-block">
+									<div class="txt1 callout after-callout align-left" id="callout-1">डिजिटल भुगतान में आपका स्वागत है।डिजिटल भुगतान करें और अपने समय और मेहनत की बचत करें। डिजिटल भुगतान के माध्यम से आप सीधे अपने बैंक में पैसे प्राप्त कर सकते हैं, ख़रीददारी करके भुगतान कर सकते हैं, और अपने पैसे को सुरक्षित रख सकते हैं।</div>
+									
+
+								</div>
+								<div class="chat-icon-block show-for-desktop">
+									<div class="img1 chat-icon chat-icon-1 male-guide-icon"><img src="resources/slide3/img/a5.png"></div>
+								</div>     
+							</div>
+						</div>
+						
+						
+                    
+						<div class="columns small-11 large-12 medium-10" style="margin-top: 10%;">
+								<nav id="container_navigation" role="navigation">   
+									<div class="l-container">
+									<button type="button"  id="btn_previous" rel="audio" aria-label="Previous Page" class="tis-btn ui-prev-btn hide-text" aria-role="button" role="button" aria-labelledby="" aria-hidden="false"><img src="images/back.png"/></button></div>   
+									
+									<div class="r-container">
+									
+									
+									
+									<button type="button" disabled id="btn_next"  rel="audio" aria-label="Next Page"  aria-role="button" role="button" aria-labelledby="" aria-hidden="false"><span class="continue_text">जारी रखें</span><span class="ui-skin icon"></span></button>
+									</div>
+									
+									
+								</nav>
+					    </div>
+					</div>
+					
+				</div>
+		    </div>
+    </div>	
+           			
+<script>
+var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'resources/slide3/audio3.mp3');
+	audioElement.loop = false;
+	audioElement.play();
+	audioElement.addEventListener("timeupdate",function(){
+		if(audioElement.currentTime>20)
+		{
+			audioElement.pause();
+			audioElement.currentTime = 0;
+			$("#btn_next").removeAttr('disabled');
+			$("#btn_next").addClass('shake');
+			$("#btn_previous").removeAttr('disabled');
+		}
+		if(audioElement.currentTime>0 && audioElement.currentTime<1 )
+		{
+			$(".screentext1").removeClass('hidden');
+			$(".txt1").addClass('animate__animated animate__bounceIn delay-1 animate__slower');
+			$('.img1').addClass('animate__animated animate__bounceInRight animate__slower delay-2');
+			
+		}
+	});
+	$('#btn_previous').click(function(){
+		    audioElement.pause();
+			audioElement.currentTime = 0;
+	});
+</script>

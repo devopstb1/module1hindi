@@ -1,0 +1,74 @@
+   <div class="section quiz-section">
+            
+		<div class="grid-x">
+		   <div class="columns small-11 large-8 medium-10 activity-area hidden screentext1">
+				
+			   
+						<div class="BG">
+							<div class="" style="float: left;width: 100%;background: #fff;">
+								<div class="temp_img">
+									<img src="resources/slide7/gif/7.gif">
+								</div>
+							 
+								<div class="temp_text" >
+									<div class="txt1 questiontext"><span class="highlighttext">डिजिटल भुगतान का उपयोग शुरू करने के लिए तैयार रहें—</span></div>
+									<p class="txt2">
+									    <ul style="list-style: none;text-align: left;margin: 0px;font-size: 1em;">
+											डिजिटल भुगतान करने के लिए आपको आवश्यकता है -
+											<li>* एक फ़ोन और साथ में इंटरनेट की सुविधा ।</li>
+											<li>* फ़ोन नंबर आपके बैंक खाते से लिंक होना चाहिए  । </li>
+											<li>* अपना अकाउंट वेरिफाई करने के लिए डेबिट कार्ड । </li>
+											<li>* इसके बाद आप यह चुन सकते हैं कि आप किस तरीके से डिजिटल भुगतान करना चाहते हैं । </li>
+											<li>*डिजिटल भुगतान के सभी विकल्पों में गूगल पे, और फ़ोन पे जैसे यूपीआई ऐप इस्तेमाल करने में सबसे आसान हैं।</li>
+									    </ul>
+									</p>
+								</div>
+								
+							</div>
+						</div>
+			</div>
+						
+                    
+				<div class="columns small-11 large-12 medium-10" style="margin-top: 5%;margin-bottom: 5%;height: 54px;">
+						<nav id="container_navigation" role="navigation">   
+							<div class="l-container">
+							<button type="button"  id="btn_previous" disabled rel="audio" aria-label="Previous Page" class="tis-btn ui-prev-btn hide-text" aria-role="button" role="button" aria-labelledby="" aria-hidden="false"><img src="images/back.png"/></button></div>   
+							
+							<div class="r-container">
+							
+							
+							
+							<button type="button" disabled id="btn_next"  rel="audio" aria-label="Next Page"  aria-role="button" role="button" aria-labelledby="" aria-hidden="false"><span class="continue_text">जारी रखें</span><span class="ui-skin icon"></span></button>
+							</div>
+							
+						</nav>
+					</div>
+		   </div>			
+    </div>
+<script>
+var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'resources/slide7/audio7.mp3');
+	audioElement.loop = false;
+	audioElement.play();
+	audioElement.addEventListener("timeupdate",function(){
+	if(audioElement.currentTime>37.9)
+		{
+			audioElement.pause();
+			audioElement.currentTime = 0;
+			$("#btn_next").removeAttr('disabled');
+			$("#btn_next").addClass('shake');
+			$("#btn_previous").removeAttr('disabled');
+		}
+		$(".screentext1").removeClass('hidden');
+		$(".txt1").addClass('animate__animated animate__bounceIn delay-1 animate__slower');
+		$('.img1').addClass('animate__animated animate__bounceInLeft animate__slower delay-2');
+		if(audioElement.currentTime>5 && audioElement.currentTime<11 )
+		{
+			$('.txt2').addClass('animate__animated animate__bounceIn delay-1 animate__slower delay-2');
+		}
+	});
+	$('#btn_previous').click(function(){
+		    audioElement.pause();
+			audioElement.currentTime = 0;
+	});
+</script>		

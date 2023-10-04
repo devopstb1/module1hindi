@@ -1,0 +1,65 @@
+    <div class="section quiz-section">   
+		<div class="grid-x">
+			<div class="columns small-11 large-8 medium-10 activity-area hidden screentext1">
+				<div class="BG">
+					<div class="" style="float: left;width: 100%;background: #fff;">
+						<div class="temp_img">
+							<img src="resources/slide5/gif/5.gif">
+						</div>
+					 
+						<div class="temp_text" >
+							<div class="txt1 questiontext"><span class="highlighttext">डिजिटल भुगतान के फायदे—</span></div>
+							<p class="txt2" style="text-align: justify;">डिजिटल भुगतान के ज़रिये आप अपने सभी मासिक बिल, जैसे की बिजली बिल, गैस बिल, और पानी के बिल का भुगतान करने के लिए लंबी दूरी तय करने और कतार में खड़े होने की जरूरत नहीं है। इससे आप नगद और छुट्टे पैसे की चिंता किए बिना कोई भी सामान खरीद सकते हैं। किसी भी इमरजेंसी परिस्थिति के दौरान परिवार के सदस्य तुरंत पैसों का ट्रांसफर करके एक दूसरे की मदद कर सकते हैं। आपका पैसा चोरी नहीं किया जा सकता है और आपके खाते में सुरक्षित रहता है।</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		
+			<div class="columns small-11 large-12 medium-10" style="margin-top: 5%;margin-bottom: 5%;height: 54px;">
+				<nav id="container_navigation" role="navigation">   
+					<div class="l-container">
+						<button type="button"  id="btn_previous" disabled rel="audio" aria-label="Previous Page" class="tis-btn ui-prev-btn hide-text" aria-role="button" role="button" aria-labelledby="" aria-hidden="false">
+							<img src="images/back.png"/>
+						</button>
+					</div>   
+					
+					<div class="r-container">
+						<button type="button" disabled id="btn_next"  rel="audio" aria-label="Next Page"  aria-role="button" role="button" aria-labelledby="" aria-hidden="false"><span class="continue_text">जारी रखें</span><span class="ui-skin icon"></span></button>
+					</div>
+					
+				</nav>
+			</div>
+	   </div>			
+    </div>	
+    		
+<script>
+var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'resources/slide5/audio5.mp3');
+	audioElement.loop = false;
+	audioElement.play();
+	audioElement.addEventListener("timeupdate",function(){
+		if(audioElement.currentTime>39.9)
+		{
+			audioElement.pause();
+			audioElement.currentTime = 0;
+			$("#btn_next").removeAttr('disabled');
+			$("#btn_next").addClass('shake');
+			$("#btn_previous").removeAttr('disabled');
+			
+		}
+		$(".screentext1").removeClass('hidden');
+		$(".txt1").addClass('animate__animated animate__bounceIn delay-1 animate__slower');
+		$('.img1').addClass('animate__animated animate__bounceInLeft animate__slower delay-2');
+		if(audioElement.currentTime>4 && audioElement.currentTime<5 )
+		{
+		   
+			$('.txt2').addClass('animate__animated animate__bounceIn delay-1 animate__slower delay-2');
+			
+		}
+	});
+	$('#btn_previous').click(function(){
+		    audioElement.pause();
+			audioElement.currentTime = 0;
+	});
+</script>		

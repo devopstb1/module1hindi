@@ -1,0 +1,367 @@
+<style type="text/css">/* chat section */
+.grid-x .columns {
+    text-align: center;
+}
+/* chat section */
+/* smiley MCQ */ 
+.BG-blue {
+    background: #ff6600;
+}
+.questiontext{
+    padding: 0px 20px 20px 0px;
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: left;
+    color: #2293b5;
+    font-size: 1.55em;
+    font-weight:bold;
+}
+.highlighttext{
+    color: #fe6800;
+    font-size: 0.85em;
+    font-weight:normal;
+}
+
+
+.toparea{
+    width: 100%;
+    display: inline-block; 
+}
+
+ 
+  .toparea{
+            background: #fceee3;
+    display: table;
+    }  
+    .optionbox .image{
+        display: table-cell;
+        min-width: 100px;
+        max-width: 30%;
+    } 
+    
+ 
+    
+    .optionbox .optiontext{
+        margin-bottom: 0;
+        display: table-cell;
+        vertical-align: middle;
+        max-width: 420px;
+    text-align: left;
+    min-width: 100px;
+	width: 85%;
+    }
+  /* On mouse-over, add a grey background color */
+  
+  .optionbox {
+    width: 100%;
+margin-bottom: 0px !important;
+}
+
+
+.checkbox-container {
+    height: 30px;
+   
+   
+     position: relative;
+}
+ .optioncontainer .columns.small-12{
+    margin-bottom: 20px;
+}
+
+.optiontext {
+    
+    color: #ff6600;
+    margin-bottom: 20px;
+    display: table;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 10px 0px 10px 0px;
+}
+
+.chat-row.row2.Avater-smiley-expression .callout.after-callout::after {
+    top: 30%;
+    transform: scaleX(-1) rotate(12deg);
+    border: 18px solid transparent;
+    border-left: 51px solid #e9f7fb;
+    left: -23%;
+    content: '';
+    width: 127px;
+    position: absolute;
+    bottom: auto !important;
+}
+.chat-row.row2.Avater-smiley-expression {
+    padding-right: unset;
+}
+@media(min-width:640px) and (max-width:850px){
+    .quiz-section {
+        
+        padding: 20px 40px;
+    }
+}
+
+
+.chat-row.row2.male-guide-expression-11 .show-for-desktop .chat-icon {
+    width: 176px;
+    height: 176px;
+    background-repeat: no-repeat;
+    background-position: unset;
+}
+
+.highlighttext {
+    color: #fe6800;
+    font-size: 0.65em;
+    font-weight: normal;
+}
+
+
+
+.male-guide-icon-2 {
+    background: none;
+}
+
+.chat-row.row2.Avater-smiley-expression.smiley-expression-1 .show-for-desktop, .chat-row.row2.Avater-smiley-expression.smiley-expression-1 .show-for-mobile {
+     background-position: unset;
+    width: 100%;
+    height: 100%;
+}
+.chat-icon-block {
+    position: relative;
+    width: 221px;
+    float: right;
+    z-index: 3;
+    left: 37px;
+    padding-top: 18%;
+}
+.toparea img{
+    padding: 12px;
+}
+.callout {
+    position: relative;
+    margin: 0 0 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid rgba(10, 10, 10, 0.25);
+    border-radius: 0;
+    background-color: white;
+    color: #0a0a0a;
+}
+.chat-row.row2 .callout {
+    background: #e9f7fb;
+    border: 1px solid #e9f7fb;
+    color: #2293b5;
+    text-align: left;
+    border-radius: 0px 10px 10px 0px;
+}
+@media only screen and (max-width: 600px) {
+  .chat-icon-block img{
+    width: 50% !important;
+  }
+}
+label {
+	display: flex;
+	cursor: pointer;
+	font-weight: 500;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0.375em;
+	}
+	label input {
+		position: absolute;
+		left: -50px;
+	}
+		
+	label input:checked + span:before {
+    box-shadow: inset 0 0 0 0.4375em #ff6600;
+	}
+label span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em #ff6600;
+}
+	
+	label span {
+		display: flex;
+		align-items: center;
+		padding: 0.375em 0.75em 0.375em 0.375em;
+		border-radius: 99em; // or something higher...
+		transition: 0.25s ease;
+	}
+		label span:hover {
+			background-color: mix(#fff, $primary-color, 84%);
+		}
+</style>
+
+
+<div class="section quiz-section">
+            <div class="grid-x">
+                <div class="columns small-11 large-8 medium-10">
+                    <div class="grid-x">
+                        <div class="columns small-11 large-4 medium-5 call-out-holder">
+                            <div class="chat-row row2 Avater-smiley-expression smiley-expression-1">
+                                
+                                <div class="chat-icon-block">
+                                    <div class="animate__animated animate__bounceInLeft animate__slower chat-icon male-guide-icon-2 show-for-desktop  male-guide-expression-2-icon">
+										<img src="resources/slide8/img/Assetch1.png"/>
+									</div>
+                                    <div class="animate__animated animate__bounceInLeft chat-icon male-guide-icon-2 show-for-mobile  male-guide-expression-2-icon"><img src="resources/slide8/img/Assetch1.png"/></div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns small-11 large-7 medium-7 activity-area">
+						    <div class="txt1 chat-row row2 Avater-smiley-expression smiley-expression-1">
+                                <div class="chat-callout-block">
+                                    <div class="callout after-callout" id="callout-1">शुरू करने से पहले, आइए इस प्रश्न का उत्तर दीजिए:</div>
+                                </div>
+                                
+                            </div>
+                            <div class="questiontext hidden screentext2 txt2"><span class="  highlighttext">प्रश्न: क्या आप आज खुद से डिजिटल भुगतान कर सकते हैं?</span></div>
+                            <div class="grid-x optioncontainer hidden8 screentext3">
+                                <div class="columns small-12">
+                                    <div class="BG-blue optionbox left-align">
+                                        <div class="hidden1 screentext4" style="background: #fceee3;">
+                                            <div class="img4 image icon_smile"><img src="resources/slide8/img/3.png"/></div>
+                                         
+                                            <div class="txt4 optiontext" style="width:70%;"><p>मैं इसे आसानी से कर सकती हूँ।</p></div>
+											<div class="optiontext" style="width:10%;">
+												<label>
+													<input type="radio"  class="optionboxRedio" disabled name="radio" value="1" />
+														<span>&nbsp;</span>
+												</label>
+											
+											</div>
+                                            
+                                        </div>
+										<div class="hidden1 screentext5" style="background: #fceee3;">
+                                            <div class="img5 image icon_smile"><img src="resources/slide8/img/2.png"/></div>
+                                           <div class="txt5 optiontext" style="width:70%;"><p>यह मुश्किल लगता है, फिर भी यह संभव है।</p></div>
+										   <div class="optiontext" style="width:10%;">
+												<label>
+													<input type="radio"  class="optionboxRedio" disabled name="radio" value="2" />
+														<span>&nbsp;</span>
+												</label>
+											
+											</div>
+                                       
+                                        </div>
+										<div class="hidden1 screentext6" style="background: #fceee3;">
+                                            <div class="img6 image icon_smile"><img src="resources/slide8/img/1.png"/></div>
+											<div class="txt6 optiontext" style="width:70%;"><p>मुझे लगता है कि बहुत मुश्किल है।</p></div>
+											<div class="optiontext" style="width:10%;">
+												<label>
+													<input type="radio"  class="optionboxRedio" disabled  name="radio" value="3" />
+														<span>&nbsp;</span>
+												</label>
+											
+											</div>
+                                        </div>
+                                    </div>
+                                    
+								</div>
+                                
+                            </div>
+                        </div>
+                        </div>
+						
+                    
+						<div class="columns small-11 large-12 medium-10" style="margin-top: 5%;margin-bottom: 5%;height: 54px;">
+								<nav id="container_navigation" role="navigation">   
+									<div class="l-container">
+									<button type="button"  id="btn_previous" rel="audio" aria-label="Previous Page" class="tis-btn ui-prev-btn hide-text" aria-role="button" role="button" aria-labelledby="" aria-hidden="false"><img src="images/back.png"/></button></div>   
+									
+									<div class="r-container">
+									
+									
+									
+									<button type="button" disabled id="btn_next"  rel="video" aria-label="Next Page"  aria-role="button" role="button" aria-labelledby="" aria-hidden="false"><span class="continue_text">जारी रखें</span><span class="ui-skin icon"></span></button>
+									</div>
+									
+									
+								</nav>
+							</div>
+						</div>
+					
+					
+					</div>
+				</div>
+            </div>	
+        </div>
+<script>
+/*$(".screentext4").click(function() {
+	$(this).css('background','#f1c4a0');
+	$(this).css('border-bottom','5px solid #ff6600');
+});
+$(".screentext5").click(function() {
+	$(this).css('background','#f1c4a0');
+	$(this).css('border-bottom','5px solid #ff6600');
+});
+$(".screentext6").click(function() {
+	$(this).css('background','#f1c4a0');
+});*/
+</script>
+<script>
+var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'resources/slide8/audio8.mp3');
+	audioElement.loop = false;
+	audioElement.play();
+	audioElement.addEventListener("timeupdate",function(){
+	
+		if(audioElement.currentTime>17.9)
+		{
+			audioElement.pause();
+			audioElement.currentTime = 0;
+			$("#btn_next").removeAttr('disabled');
+	        $("#btn_next").addClass('shake');
+			$("#btn_previous").removeAttr('disabled');
+		}
+										
+		if(audioElement.currentTime>0 && audioElement.currentTime<4 )
+		{
+			$(".txt1").addClass('animate__animated animate__bounceIn delay-4 animate__slower');
+		}
+		if(audioElement.currentTime>3 && audioElement.currentTime<7 )
+		{
+			$(".screentext2").removeClass('hidden');
+			$('.txt2').addClass('animate__animated animate__bounceIn animate__slower delay-4');
+		}
+		
+		if(audioElement.currentTime>8 && audioElement.currentTime<10)
+		{
+			$(".screentext3").removeClass('hidden8');
+		}
+		
+		if(audioElement.currentTime>9 && audioElement.currentTime<11 )
+		{
+			$(".screentext4").removeClass('hidden1');
+			$('.img4').addClass('animate__animated animate__bounceIn animate__slower delay-2');
+			$('.txt4').addClass('animate__animated animate__bounceIn animate__slower delay-4');
+		}
+		
+		if(audioElement.currentTime>10 && audioElement.currentTime<14 )
+		{
+			$(".screentext5").removeClass('hidden1');
+			$('.img5').addClass('animate__animated animate__bounceIn animate__slower delay-2');
+			$('.txt5').addClass('animate__animated animate__bounceIn animate__slower delay-4');
+			
+		}
+		
+		if(audioElement.currentTime>13 && audioElement.currentTime<18 )
+		{
+			$(".screentext6").removeClass('hidden1');
+			$('.img6').addClass('animate__animated animate__bounceIn animate__slower delay-2');
+			$('.txt6').addClass('animate__animated animate__bounceIn animate__slower delay-4');
+			
+		}
+	});
+	$('#btn_previous').click(function(){
+		    audioElement.pause();
+			audioElement.currentTime = 0;
+	});
+</script>

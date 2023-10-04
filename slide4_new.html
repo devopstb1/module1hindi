@@ -1,0 +1,69 @@
+<div class="section quiz-section">   
+		<div class="grid-x">
+			<div class="columns small-11 large-8 medium-10 activity-area hidden screentext1">
+				<div class="BG">
+					<div class="" style="float: left;width: 100%;background: #fff;">
+						<div class="temp_img">
+							<img src="resources/slide4/gif/4.gif">
+						</div>
+					 
+						<div class="temp_text" >
+							<div class="txt1 questiontext"><span class="highlighttext">समझें कि डिजिटल भुगतान क्या हैं—</span></div>
+							<p class="txt2" style="text-align: justify;">जब एक खाते से दूसरे खाते में पैसों का लेन-देन, मोबाइल फ़ोन या इंटरनेट के माध्यम से होता है, तब उसे डिजिटल भुगतान कहते हैं।</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		
+			<div class="columns small-11 large-12 medium-10" style="margin-top: 5%;margin-bottom: 5%;height: 54px;">
+				<nav id="container_navigation" role="navigation">   
+					<div class="l-container">
+						<button type="button"  id="btn_previous" disabled rel="audio" aria-label="Previous Page" class="tis-btn ui-prev-btn hide-text" aria-role="button" role="button" aria-labelledby="" aria-hidden="false">
+							<img src="images/back.png"/>
+						</button>
+					</div>   
+					
+					<div class="r-container">
+						<button type="button" disabled id="btn_next"  rel="audio" aria-label="Next Page"  aria-role="button" role="button" aria-labelledby="" aria-hidden="false"><span class="continue_text">जारी रखें</span><span class="ui-skin icon"></span></button>
+					</div>
+					
+				</nav>
+			</div>
+	   </div>			
+    </div>	
+    
+<script>
+var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'resources/slide4/audio4.mp3');
+	audioElement.loop = false;
+	audioElement.play();
+	audioElement.addEventListener("timeupdate",function(){
+		if(audioElement.currentTime>12.9)
+		{
+			audioElement.pause();
+			audioElement.currentTime = 0;
+			$("#btn_next").removeAttr('disabled');
+			$("#btn_next").addClass('shake');
+			$("#btn_previous").removeAttr('disabled');
+		}
+											
+		if(audioElement.currentTime>0 && audioElement.currentTime<3 )
+		{
+			$(".screentext1").removeClass('hidden');
+			$('.img1').addClass('animate__animated animate__bounceInLeft animate__slower delay-2');
+			$(".txt1").addClass('animate__animated animate__bounceIn delay-4 animate__slower');
+			
+		}
+		if(audioElement.currentTime>3 && audioElement.currentTime<11 )
+		{
+		   
+			$('.txt2').addClass('animate__animated animate__bounceIn delay-1 animate__slower delay-2');
+			
+		}
+	});
+	$('#btn_previous').click(function(){
+		    audioElement.pause();
+			audioElement.currentTime = 0;
+	});
+</script>		

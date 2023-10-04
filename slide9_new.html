@@ -1,0 +1,100 @@
+
+    <div class="video_row" style="width:60%;">
+	        <p style="text-align:center;" class="txt1 animate__animated animate__bounceIn delay-4 animate__slower">डिजिटल भुगतान के बारे में अधिक जानने के लिए वीडियो देखें।</p>
+			<div class="videoplayer" id="player-1">
+              <div class="bg-dark">
+                
+				<video controls autoplay id="video_9">
+					<source src="resources/slide9/intro.mp4" width="100%" height="100%" type="video/mp4">
+					
+					Your browser does not support the video tag.
+				</video>
+              </div>
+              
+              
+            </div>
+			<div class="section quiz-section hidden1 screentext2" style="margin-top: 30px;margin-bottom: 30px;">
+            <div class="grid-x">
+                <div class="columns small-12 large-12 medium-10">
+                    <div class="grid-x">
+                        <div class="columns small-12 large-12 medium-10">
+							<div class="chat-row row2 guide-expression male-guide-expression-11">
+								<div class="chat-icon-block show-for-mobile">
+									<div class="chat-icon chat-icon-1 mobile-male-guide-icon img1"><img src="resources/slide9/img/avtarthumbsup.png"></div> 
+								</div>
+								<div class="chat-callout-block">
+									<div class="txt1 callout after-callout align-left " id="callout-1">अभी भी सन्देह है? आइए, अगले प्रश्नों का उत्तर देते हैं</div>
+								</div>
+								<div class="chat-icon-block show-for-desktop">
+									<div class="img1 chat-icon chat-icon-1 male-guide-icon"><img src="resources/slide9/img/avtarthumbsup.png"></div>
+								</div>     
+							</div>
+						</div>
+						
+						
+                    </div>
+                </div>
+				<div class="columns small-11 large-10 medium-10" style="margin-top: 5%;margin-bottom: 5%;height: 54px;">
+                   <nav id="container_navigation" role="navigation"> 
+                      
+                    <div class="l-container">
+						<button type="button"  id="btn_previous" rel="audio" aria-label="Previous Page" class="tis-btn ui-prev-btn hide-text" aria-role="button" role="button" aria-labelledby="" aria-hidden="false"><img src="images/back.png"/></button>
+					</div>  
+                    <div class="r-container">
+						
+						
+						<button type="button" disabled id="btn_next"  rel="audio" aria-label="Next Page">
+							<span class="continue_text">जारी रखें</span>
+							<span class="ui-skin icon"></span>
+						</button>
+					</div>
+					</nav>
+					
+               
+            </div>
+            </div>
+        </div>
+			
+			
+     </div>
+	     <script type='text/javascript'>
+			document.getElementById('video_9').addEventListener('ended',myHandler,false);
+			var audioElement = document.createElement('audio');
+				 
+			audioElement.setAttribute('src', 'resources/slide9/audio9.mp3');
+            audioElement.loop = false;	
+			function myHandler(e) {
+			
+							 
+				audioElement.play();
+				
+				
+			}
+			audioElement.addEventListener("timeupdate",function(){
+				//$("#currentTime1").text("Current second:" + audioElement.currentTime);
+				           if(audioElement.currentTime>5.9)
+							{
+								audioElement.pause();
+								audioElement.currentTime = 0;
+								
+								$("#btn_next").removeAttr('disabled');
+								$("#btn_next").addClass('shake');
+								$("#btn_previous").removeAttr('disabled');
+								
+							}
+							if(audioElement.currentTime>0 && audioElement.currentTime<4 )
+							{
+							    
+								$(".screentext2").removeClass('hidden1');
+								$('.img4').addClass('animate__animated animate__bounceInLeft animate__slower delay-2');
+								$('.txt4').addClass('animate__animated animate__bounceIn animate__slower delay-4');
+								
+							}
+			});
+    $('#btn_previous').click(function(){
+		    audioElement.pause();
+			audioElement.currentTime = 0;
+	});
+</script>
+
+ 
