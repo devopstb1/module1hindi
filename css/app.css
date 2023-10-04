@@ -1,0 +1,23 @@
+html, body {
+    color: #3b322e;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header, .main, aside, footer, .ml, .mr {
+ 
+    background-color: #CCC;
+    height: 100px;
+    text-align: center;
+	
+border: 1px solid blue;
+}
+
+.row {
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 0;
+     margin-bottom: 0;
+     max-width: 85.375rem; 
+}

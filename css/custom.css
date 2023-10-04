@@ -1,0 +1,513 @@
+
+.grid-x .columns {
+    text-align: center;
+}
+/* chat section */
+/* smiley MCQ */ 
+.questiontext{
+    padding: 10px 20px 30px 20px;
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: left;
+    color: #2293b5;
+    font-size: 1.55em;
+    font-weight:bold;
+}
+.highlighttext{
+    color: #fe6800;
+    font-size: 0.85em;
+    font-weight:normal;
+}
+.optioncontainer{
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.optionbox{
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    cursor:pointer;
+    box-shadow: 2px 7px 8px rgba(0,0,0,.4);
+}
+
+.optiontext p{
+    
+    
+    line-height: 20px;
+}
+
+.toparea{
+    width: 100%;
+    display: inline-block; 
+	background: #fff;
+	padding:0px 10px 0px 10px;
+}
+.checkbox-container {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0 auto;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    /* height: 0; */
+    /* width: 0; */
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    right: 0px;
+    z-index: 9;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: relative;
+    top: 30px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #7b7470;
+    display: block;
+  }
+  .toparea{
+        
+    display: table;
+    }  
+    .optionbox .image{
+        display: table-cell;
+        min-width: 100px;
+        max-width: 30%;
+        height: 116px;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+    .optionbox .image.icon_smile{
+       background-image:url(sco_content/en/images/cw01/cw01/pg03/icon_smile.gif);
+    }
+
+    
+     .optionbox .image.icon_sad{
+        background-image:url(sco_content/en/images/cw01/cw01/pg03/icon_sad.gif);
+     }
+ 
+     
+      .optionbox .image.icon_doubt{
+        background-image:url(sco_content/en/images/cw01/cw01/pg03/icon_doubt.gif);
+     }
+ 
+    
+    .optionbox .optiontext{
+        margin-bottom: 0;
+        display: table-cell;
+        vertical-align: middle;
+        max-width: 420px;
+    text-align: center;
+    min-width: 100px;
+    }
+  /* On mouse-over, add a grey background color */
+  
+  .optionbox {
+    width: 100%;
+	margin-bottom: 0px !important;
+}
+
+
+.checkbox-container {
+    height: 30px;
+   
+   
+     position: relative;
+}
+ .optioncontainer .columns.small-12{
+    margin-bottom: 20px;
+}
+ 
+.optiontext {
+    padding: 10px;
+    color: #2293b5;
+    margin-bottom: 20px;
+    display: table;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 10px 25px 10px 10px;
+}
+.optionbox .tick_box{
+    visibility: hidden;
+    background-position: -20px -108px;
+	width: 34px;
+	height: 34px;
+    float: right;
+    margin-right:20px;
+}
+.tick_area{
+    display: table-cell;  
+    width: 32px;
+    vertical-align: middle;
+}
+.optionbox.selected .tick_box{
+    visibility: visible;
+}
+@media(min-width:640px) and (max-width:850px){
+    .quiz-section {
+        
+        padding: 20px 40px;
+    }
+}
+
+
+
+/* summary -----------------------*/
+div#summary_popup {
+    position: fixed;
+    display: block;
+    background: #fff;
+    left: calc(50% - 350px);
+    top: calc(50% - 220px);
+    width: 700px;
+    height: 440px;
+    -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    z-index: 4;
+} 
+
+.page-sprite{
+    background: url(images/common/certificate_sprite.png) no-repeat;
+}
+.comman-sprite{
+    background: url(images/common/sprite_common.png) no-repeat;
+}
+
+.desc_popup_close .icon {
+    background-position: -289px -108px;
+    width: 33px;
+    height: 33px;
+}
+.icon{
+  display: block;
+}
+button#guide_popup_close {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+}
+.summary-panel {
+    padding: 40px;
+}
+.summary_icon{
+    background-position: -131px -10px;
+    width: 89px;
+    height: 89px;
+    display: block;
+    margin: 0 auto;
+}
+.star_icon{
+  background-position: -11px -11px;
+  width: 105px;
+  height: 103px;
+  display: block;
+}
+.sign_icon{
+    background-position: -228px -16px;
+    width: 112px;
+    height: 58px;
+    display: block;
+    position: relative;
+    bottom: -13px;
+}
+div#summarytext-1, #summarytext-4 ,  #summarytext-5{
+    font-size: 50px;
+    color: #fe6800;
+    text-align: center;
+    padding: 5px 0;
+}
+#summarytext-4{
+    padding: 50px 0;
+}
+div#summarytext-2 {
+    font-size: 20px;
+    color: #2293b5;
+    text-align: center;
+    padding: 5px 0 0;
+}
+div#summarytext-3 {
+    font-size: 20px;
+    color: #fe6800;
+    text-align: center;
+    padding: 5px 0 36px 0;
+}
+
+#btndownloadCertificate, #btn_continue {
+    background: rgba(254,104,0,1);
+    width: 360px;
+    height: 66px;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 30px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.7);
+    display: block;
+    margin: 0 auto;
+}
+
+#btndownloadCertificate .icon, #btn_continue .icon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* left: 0; */
+    right: 41px;
+    margin: auto 0;
+    background: url('images/common/sprite_common.png') no-repeat -51px -20px;
+    width: 12px;
+    height: 14px;
+}
+#btndownloadCertificate:focus, #btndownloadCertificate:hover
+#btn_continue:focus, #btn_continue:hover{
+  box-shadow: none;
+}
+#btn_continue {
+    width: 200px;
+}
+
+input[type="text"] {
+    margin: 0;
+    border-radius: 8px;
+    height: 49px;
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    width: 50%;
+
+}
+.user_detail_form{
+  margin: 0 auto;
+  width: 538px;
+  display: block;
+  min-height: 75px;
+  text-align: center;
+}
+.data-date {
+    display: block;
+    margin-top: 35px;
+}
+.certificate-outer{
+    height: 700px;
+}
+.certificate  hr {
+    border: 1px solid gray;
+    margin: 10px auto;
+}
+.certificate{
+    height: 1099px;
+    width: 770px;
+    padding: 11% 100px 10%;
+    position: relative;
+    clear: both;
+    border: 4px #fe6800 solid;
+    margin: 10px 10px 10px 12px; 
+    z-index: -1;
+}
+.certificate .title {
+    color: #2293b5;
+    font-size: 50px;
+    padding: 80px 0 40px;
+}
+.certificate .module_name{
+    color: #f1510d;
+}
+
+.certificate .sub-title {
+    color: #2293b5;
+    font-size: 25px;
+    font-family: 'UR';
+}
+.certificate .user-name{
+    color: #2293b5;
+    font-size: 30px;
+    padding: 70px 0 0;
+    text-align: center;
+}
+.certificate .cousre-name{
+    color: #2293b5;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    padding: 30px 0;
+    display: block;
+}
+.footer .date, .footer .signature{
+    color: #47b7eb;
+    font-size: 18px;
+    padding: 20px 0;
+    text-align: center;
+
+}
+span.logo-ovanto, span.logo-accion{
+    position: absolute;
+    display: block;
+    height: 25px;
+}
+span.logo-ovanto {
+    width: 123px;
+    background-position: -350px -36px;
+    top: 40px;
+    right: 40px;
+}
+span.logo-accion {
+    width: 107px;
+    background-position: -489px -36px;
+    top: 40px;
+    left: 40px;
+}
+.footer-data .logo-o-ovanto{
+    display: block;
+    width: 283px;
+    height: 260px;
+    bottom: 0;
+    background-position: -610px -12px;
+    left: calc( 50% - 141px);
+    position: absolute;
+}
+
+.footer-data .columns {
+    text-align: center;
+}
+
+.footer-data{
+    margin-top: 30px !important;
+    margin-bottom: -57px !important;
+    color: #2293b5
+}
+div#summary_popup:before{
+    content: '';
+    display: block;
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.submit_btn_section.text-center {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+ @media screen and (max-width: 767px) {
+     div#summary_popup {
+        width: 97%;
+        left: 1.5%;
+        min-height: 380px;
+        top: calc(50% - 190px);
+    }
+    div#summarytext-1, #summarytext-4 ,  #summarytext-5{
+        font-size: 30px;
+    }
+    div#summarytext-2, div#summarytext-3{
+        font-size: 15px;
+    }    
+    .summary-panel {
+        padding: 40px 10px !important;
+    }
+    .user_detail_form {
+        width: 100% !important;
+    } 
+    #btndownloadCertificate .icon{
+        right: 20px !important;
+    }    
+    #btndownloadCertificate {
+        width: 333px !important;
+        padding-left: 20px !important;
+        font-size: 20px;
+    }        
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 815px)
+and (orientation : landscape) {
+    .popup-container {
+        height: 360px !important;
+        top: calc(50% - 180px) !important;
+    }
+    div#summarytext-1, #summarytext-4 ,  #summarytext-5{
+        font-size: 30px;
+    }
+    div#summarytext-2, div#summarytext-3{
+        font-size: 15px;
+    }       
+}
+.male-guide-icon {
+    background: url(resources/slide2/img/ctab.png);
+}
+.chat-row.row2.male-guide-expression-11 .show-for-desktop .chat-icon {
+    width: 176px;
+    height: 176px;
+    background-repeat: no-repeat;
+    background-position: unset;
+}
+.optionbox .image.icon_smile {
+    background-image: url(resources/slide2/img/character.png);
+}
+.highlighttext {
+    color: #fe6800;
+    font-size: 0.65em;
+    font-weight: normal;
+}
+
+
+
+#player-container #play-pause {
+  cursor: pointer;
+  text-indent: -999999px;
+  height:40px;
+  width: 40px;
+  padding: 12px 18px;
+  z-index: 2;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+    background-repeat: no-repeat!important;
+    background-position: center;
+    background-size: 16px;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:20px;
+  background-color: gainsboro;
+}
+.play {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+}
+.pause {
+   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMjRoLTZ2LTI0aDZ2MjR6bTEwLTI0aC02djI0aDZ2LTI0eiIvPjwvc3ZnPg==)!important;
+}

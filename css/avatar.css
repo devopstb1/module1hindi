@@ -1,0 +1,1019 @@
+
+.fit-parent{
+    width: 100% !important;
+}
+.section.chat-section {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+.chat-row{
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    display: table;
+}
+.chat-icon-block{
+    position: relative;
+    /* width: 221px; */
+    float: right;
+    margin-right: 53px;
+    z-index: 3;
+    /* top: 5%; */
+    margin-top: -16%;
+}
+.chat-callout-block{
+    position: relative;
+    width: calc(100% - 221px);
+    float: left;
+    z-index: 2;
+}
+.callout{
+    border-radius: 8px;
+    background: #2293b5;
+    left: 0;
+    margin-top: 50px;
+    border: 1px solid #2293b5;
+    color:#ffffff;
+}
+.chat-row.row2 .callout{
+    background: #e9f7fb;
+    border: 1px solid #e9f7fb;
+    color:#000 !important;
+    text-align: left;
+}
+.before-callout-extra:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -44px;
+    top: calc(50% - 14px);
+    border: 14px solid transparent;
+    border-right: 29px solid #2293B5;
+    -webkit-filter: drop-shadow(0 -0.0925rem 0.01rem rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0 -0.0925rem 0.01rem rgba(0, 0, 0, 0.1));
+}
+.after-callout-extra:after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -1px;
+    content: "";
+    top: -3px;
+    border-bottom: 43px solid #ffffff;
+    border-left: 15px solid transparent;
+}
+.chat-row  .callout.after-callout::after{
+    /* content: ''; */
+    /* position: absolute; */
+    /* width: 0; */
+    /* height: 0; */
+    /* right: -59px; */
+    top: 29px;
+    /* left: auto; */
+    /* top: 29px; */
+    /* transform: scaleY(-1) rotate(-8deg); */
+    /* border: 12px solid transparent; */
+    /* border-left: 51px solid #e9f7fb; */
+}
+.chat-row.row1  .callout.after-callout::after{
+    left: -59px;
+    right: auto;
+    top: 15px;
+    transform: scaleX(-1) rotate(-8deg);
+    border-left: 51px solid #2293b5;
+}
+.chat-row.row2  .callout.after-callout::after{
+    border-left: 51px solid #e9f7fb;
+}
+.chat-icon{
+    margin: 0 auto;
+}
+.chat-row.row2 .callout{
+    margin-top: 40px;
+}
+.chat-row .callout{
+    -webkit-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+.chat-row .before-callout {
+    background-color: #2293B5;
+}
+@media screen and (max-width: 767px){
+    .chat-row.row2 .callout.after-callout::after {
+        top: -28px;
+        transform: rotate(-52deg);
+        border: 12px solid transparent;
+        border-left: 51px solid #e9f7fb;
+        left: 75px;
+    }
+    .chat-section:not(.multiple-chats) .chat-row.row1 .callout.after-callout::after {
+        top: -28px;
+        transform: rotate(-52deg);
+        border: 12px solid transparent;
+        border-left: 51px solid #2293b5;
+        left: 75px;
+    }
+    .chat-row{
+        float: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+    .chat-row.row2.guide-expression .callout {
+        float: left;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1280px) {
+    .chat-row.row2.guide-expression .callout {
+        float: none;
+        left: 0;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 767px) {    
+    .chat-row.row2 .callout {
+        margin-top: 10px;
+    }
+}
+/* multiple chat */
+
+.multiple-chats .chat-icon{
+    width: 129px ;
+    height: 135px ;
+}
+.multiple-chats .chat-callout-block {
+    width: calc(100% - 230px);
+    float: left !important;
+    position: relative !important;
+    padding-left: 20px;
+}
+.multiple-chats .chat-row{
+    min-height: auto !important;
+    float: left;
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+.multiple-chats .chat-row.row2{
+    margin-top: 100px;
+}
+.multiple-chats .chat-icon-block{
+    float:left;
+}
+@media(min-width:767px){
+    .float-right .chat-callout-block {
+        margin-left: 38%;
+    }
+}
+.multiple-chats .chat-row.francis-guide-expression-2 .show-for-mobile {
+    background-position: -405px -289px;
+    width: 146px ;
+}
+/*.multiple-chats .chat-row.row2.male-guide-expression-5 .chat-icon-block, .multiple-chats .chat-row.row2.male-guide-expression-6 .chat-icon-block, .multiple-chats .chat-row.row2.male-guide-expression-2 .chat-icon-block {
+    margin-left: 0;
+    margin-right: 0;
+    right: 0;
+    float: right;
+    margin-top: 5px;
+}
+.multiple-chats .chat-row.row2.male-guide-expression-5 .chat-icon, .multiple-chats .chat-row.row2.male-guide-expression-6 .chat-icon, .multiple-chats .chat-row.row2.male-guide-expression-2 .chat-icon {
+    margin-left: 0;
+    float: left;
+    width: 120px;
+}
+.multiple-chats .chat-row.row2.male-guide-expression-5 .chat-callout-block, .multiple-chats .chat-row.row2.male-guide-expression-6 .chat-callout-block, .multiple-chats .chat-row.row2.male-guide-expression-2 .chat-callout-block {
+}*/
+/*.multiple-chats .chat-row.row2.male-guide-expression-5 .callout.after-callout::after {
+    top: 39px;
+    bottom: auto;
+    height: 20px;
+}*/
+.multiple-chats .chat-row.row2.male-guide-expression-2 .callout {
+   
+    max-width: 100%;
+    width: 100% !important;
+}
+.multiple-chats .male-guide-expression-2 .callout p {
+    max-width: 360px;
+    max-width: 100%;
+}
+.multiple-chats .chat-row.francis-guide-expression-1 .chat-callout-block, .multiple-chats  .chat-row.francis-guide-expression-2 .chat-callout-block, .multiple-chats .chat-row.francis-guide-expression-3 .chat-callout-block, .multiple-chats .chat-row.francis-guide-expression-4 .chat-callout-block {
+}
+
+.multiple-chats .chat-row.row2.francis-guide-expression-1 .show-for-desktop {
+    background-position: -11px -10px;
+	width: 177px;
+	height: 177px;
+    
+}
+.multiple-chats .chat-row.francis-guide-expression-1 .show-for-mobile {
+    background-position: -10px -294px;
+	width: 116px;
+	height: 116px;
+}
+
+.multiple-chats .chat-row.row2.male-guide-expression-1 .show-for-desktop {
+    background-position: -655px -8px;
+    
+}
+.multiple-chats .chat-row.francis-guide-expression-1 .show-for-desktop {
+    background-position: -419px -8px;
+    width: 183px;
+}
+.multiple-chats .mobile-male-guide-icon {
+    background:  url(../images/avatars/sprite_Male_guide_mobile.png);
+}
+.multiple-chats .mobile-francis-guide-icon {
+    background:  url(../images/avatars/sprite_francis_mobile.png);
+}
+.section.chat-section.multiple-chats {
+    padding: 0px 20px;
+}
+@media(min-width:767px){
+    .section.chat-section.multiple-chats {
+        padding: 0px 50px;
+    }
+    .multiple-chats .chat-icon {
+        width: 183px ;
+        height: 183px ;
+        /*border-radius: 100%;
+        margin-left: -47px !important;*/
+        /*margin-top: -59px;*/
+    }
+    .multiple-chats .chat-row.francis-guide-expression-3 .show-for-desktop {
+        background-position: -194px -5px;
+        width: 221px;
+    }
+    .multiple-chats .chat-row.row2.male-guide-expression-6 .show-for-desktop {
+        background-position: -476px -823px;
+       
+    }
+    .multiple-chats .chat-row.francis-guide-expression-2 .show-for-desktop {
+        background-position: 390px -7px;
+        width:243px;
+    }
+    .multiple-chats .chat-row.row2.male-guide-expression-5 .show-for-desktop {
+        background-position: -728px -823px;
+        
+    }
+    .multiple-chats .chat-row.francis-guide-expression-1 .show-for-desktop {
+        background-position: -8px -6px;
+        width: 183px ;
+    }
+}
+@media(max-width:767px){
+    .multiple-chats .chat-row.row2.male-guide-expression-2 {
+        min-height: 262px;
+        max-width: 340px;
+        max-width: 100%;
+    }
+    .multiple-chats .chat-row.francis-guide-expression-3 .show-for-mobile {
+        background-position: -133px -286px;
+        width:151px;
+       
+    }
+    .multiple-chats .chat-row.francis-guide-expression-1 .show-for-desktop {
+        width: 129px ;
+        height: 135px ;
+    }
+}
+.row-wrapper{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.multiple-chats .chat-row .callout{
+    margin-bottom:0;
+}
+@media(max-width:1000px){
+    .multiple-chats .chat-row-container{
+        width: 100%;
+    }
+    .multiple-chats .chat-row.row2 {
+        margin-top: 0;
+    }
+}
+@media(min-width:1024px){
+    .multiple-chats .align-right .chat-callout-block{
+        width: calc(100% - 240px) !important;
+    }
+}
+@media only screen and (max-width: 767px){
+    .multiple-chats .chat-icon-block {
+        width: 150px;
+    }
+    .multiple-chats .chat-callout-block {
+        width: calc(100% - 150px);
+    }
+    .multiple-chats .row2 .chat-callout-block{
+        padding-left: 0;
+    }
+    .multiple-chats .callout{
+        margin-top: 0;  
+    }
+    .multiple-chats .chat-row.row2 .after-callout::after{
+        right: -43px;
+        left: auto;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+    .multiple-chats .chat-row{
+        margin-bottom:20px !important;
+    }
+}
+/* multiple chat */
+/* chat section Smiley page Expression */
+.chat-row.row2.Avater-smiley-expression .chat-callout-block {
+    width: 100%;
+}
+.chat-row.row2.Avater-smiley-expression {
+    padding-right: 46px;
+}
+.chat-row.row2.Avater-smiley-expression.smiley-expression-1 .show-for-desktop,
+.chat-row.row2.Avater-smiley-expression.smiley-expression-1 .show-for-mobile{
+    background-position: -145px -11px;
+	width: 185px;
+	height: 426px;
+}
+.chat-row.row2.Avater-smiley-expression .chat-icon-block{
+    width: 100%;
+}
+.chat-row.row2.Avater-smiley-expression .callout.after-callout::after {
+    top: auto;
+    bottom: -32px;
+    left: auto;
+    transform: scaleX(-1) rotate(124deg);
+    border: 12px solid transparent;
+    border-left: 51px solid #e9f7fb;
+    left: 20%;
+    content: '';
+    position: absolute;
+}
+@media screen and (max-width: 639px) {
+    .chat-row.row2.Avater-smiley-expression{
+        max-width: 330px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        float: none;
+        padding-right: 0;
+    }
+    .chat-row.row2.Avater-smiley-expression .chat-callout-block{
+        width: 100%;
+    }
+}
+/* chat section Smiley page Expression */
+
+/* chat section Expression 2 */
+.chat-row.row2.male-guide-expression-2 .show-for-desktop .chat-icon{
+    background-position: -13px -829px;
+	width: 233px;
+	height: 177px;
+}
+.chat-row.row2.male-guide-expression-2 .show-for-mobile .chat-icon{
+    background-position: -450px -561px;
+	width: 131px;
+	height: 99px;
+}
+.chat-row.row2.male-guide-expression-2 .chat-icon-block{
+    width:233px;
+}
+.chat-row.row2.male-guide-expression-2 .chat-callout-block{
+    width: calc(100% - 250px);
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-2{
+        width: 330px;
+        max-width: 100%;
+        float:none;
+    }
+    .chat-row.row2.male-guide-expression-2 .callout,
+    .chat-row.row2.male-guide-expression-2 .chat-callout-block, 
+    .chat-row.row2.male-guide-expression-2 .chat-icon-block{
+        width: 100%;
+    }
+}
+/* chat section Expression 1*/
+.chat-row.row2.male-guide-expression-1{
+}
+.chat-row.row2.male-guide-expression-1 .callout {
+    right: 0;
+    margin-top: 0;
+    top: 30px;
+}
+.chat-row.row2.male-guide-expression-1 .show-for-desktop{
+    background-position: -166px -451px;
+    width: 239px;
+    height: 432px;
+}
+.chat-row.row2.male-guide-expression-1 .show-for-mobile{
+    background-position: -132px -10px;
+    width: 146px;
+    height: 260px;
+}
+.chat-row.row2.male-guide-expression-1 .chat-icon-block{
+    position:absolute;
+    margin-left: calc(100% - 195px);
+}
+.chat-row.row2.male-guide-expression-1 .chat-callout-block{
+    width: calc(100% - 382px);
+    min-width: 60%;
+}
+.padding-right{
+    padding-right: 50px;
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-1{
+        min-height: 278px;
+        width: 330px;
+        margin: 0 auto;
+        position: relative;
+        float: none;
+    }
+    .chat-row.row2.male-guide-expression-1 .callout {
+        top: 0;
+        left: 0;
+        float: left;
+        max-width: 200px;
+    }
+    .chat-row.row2.male-guide-expression-1 .chat-icon-block{
+        width: auto;
+        /*height: 233px;*/
+        position: absolute;
+        margin-left: calc(100% - 146px);
+    }
+    .chat-row.row2.male-guide-expression-1 .chat-callout-block{
+        width: 330px;
+        position: relative;
+        min-width: 330px;
+        float: none;
+    }
+    .padding-right {
+        padding-right: 0;
+    }
+    .chat-row.row2.male-guide-expression-1 .after-callout-extra {
+        left: -16px;
+        right: 0;
+        margin: 0 auto;
+        transform: rotate(0deg);
+        top: -40px;
+    }
+}
+/* chat section Expression 1 */
+/* chat section Expression 3*/
+.chat-row.row2.male-guide-expression-3{
+    min-height: 479px;
+    max-width: 450px;
+}
+.chat-row.row2.male-guide-expression-3 .callout {
+    right: 0;
+    margin-top: 0;
+    top: 26px;
+}
+.chat-row.row2.male-guide-expression-3 .show-for-desktop{
+    background-position: -413px -452px;
+    width: 172px;
+    height: 436px;
+}
+.chat-row.row2.male-guide-expression-3 .show-for-mobile{
+    background-position: -287px -11px;
+    width: 107px;
+    height: 261px;
+}
+.chat-row.row2.male-guide-expression-3 .chat-icon-block{
+/*    width: 382px;
+    height: 403px;*/
+    position:absolute;
+    margin-left: calc(100% - 255px);
+}
+.chat-row.row2.male-guide-expression-3 .chat-callout-block{
+    width: calc(100% - 473px);
+    min-width: 47%;
+}
+
+.padding-right{
+    padding-right: 50px;
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-3{
+        min-height: 261px;
+        width: 330px;
+        margin: 0 auto;
+        position: relative;
+        float: none;
+    }
+    .chat-row.row2.male-guide-expression-3 .callout {
+        top: 0;
+        left: 0;
+        float: left;
+        width: 150px;
+    }
+    .chat-row.row2.male-guide-expression-3 .chat-icon-block{
+        width: 219px;
+        position: absolute;
+        margin-left: calc(100% - 169px);
+    }
+    .chat-row.row2.male-guide-expression-3 .chat-callout-block{
+        width: 330px;
+        position: relative;
+        min-width: 330px;
+        float: none;
+    }
+    .padding-right {
+        padding-right: 0;
+    }
+    .chat-row.row2.male-guide-expression-3 .after-callout-extra {
+        left: -16px;
+        right: 0;
+        margin: 0 auto;
+        transform: rotate(0deg);
+        top: -40px;
+    }
+}
+/* chat section Expression 3 */
+
+
+/* chat section Expression 4*/
+.chat-row.row2.male-guide-expression-4{
+    min-height: 479px;
+    max-width: 450px;
+}
+.chat-row.row2.male-guide-expression-4 .callout {
+    right: 0;
+    margin-top: 0;
+    top: 48px;
+}
+.chat-row.row2.male-guide-expression-4 .show-for-desktop{
+    background-position: 211px 3px;
+    width: 185px;
+    height: 453px;
+}
+.chat-row.row2.male-guide-expression-4 .show-for-mobile{
+    background-position: -401px -7px;
+    width: 118px;
+    height: 261px;
+}
+.chat-row.row2.male-guide-expression-4 .chat-icon-block{
+/*    width: 382px;
+    height: 403px;*/
+    position:absolute;
+    margin-left: calc(100% - 274px);
+}
+.chat-row.row2.male-guide-expression-4 .chat-callout-block{
+    width: calc(100% - 473px);
+    min-width: 47%;
+}
+
+.padding-right{
+    padding-right: 50px;
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-4{
+        min-height: 261px;
+        width: 330px;
+        margin: 0 auto;
+        position: relative;
+        float: none;
+    }
+    .chat-row.row2.male-guide-expression-4 .callout {
+        top: 0;
+        left: 0;
+        float: left;
+        width: 150px;
+    }
+    .chat-row.row2.male-guide-expression-4 .chat-icon-block{
+        width: 219px;
+        position: absolute;
+        margin-left: calc(100% - 199px);
+    }
+    .chat-row.row2.male-guide-expression-4 .chat-callout-block{
+        width: 330px;
+        position: relative;
+        min-width: 330px;
+        float: none;
+    }
+    .padding-right {
+        padding-right: 0;
+    }
+    .chat-row.row2.male-guide-expression-4 .after-callout-extra {
+        left: -16px;
+        right: 0;
+        margin: 0 auto;
+        transform: rotate(0deg);
+        top: -40px;
+    }
+}
+/* chat section Expression 4 */
+
+/* chat section Expression 5
+.chat-row.row2.male-guide-expression-5{
+}
+.chat-row.row2.male-guide-expression-5 .callout.after-callout::after {
+    top: 90px;
+    bottom: auto;
+    height: 20px;
+}*/
+.chat-row.row2.male-guide-expression-5 .callout {
+    right: 0;
+    margin-top: 0;
+    top: 0;
+}
+.chat-row.row2.male-guide-expression-5 .show-for-desktop{
+    background-position: -594px 21px;
+    width: 222px !important;
+    border: 0 !important;
+    border-radius: 0;
+}
+.chat-row.row2.male-guide-expression-5 .show-for-mobile{
+    background-position: -510px -673px;
+    width: 118px;
+    height: 95px;
+}
+.chat-row.row2.male-guide-expression-5 .chat-icon-block{
+/*    width: 382px;
+    height: 403px;
+    position:absolute;
+    margin-left: calc(100% - 184px);*/
+}
+
+.padding-right{
+    padding-right: 50px;
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-5{
+        min-height: 261px;
+        margin: 0 auto;
+        position: relative;
+        float: none;
+        min-width: 300px;
+    }
+    .chat-row.row2.male-guide-expression-5 .callout {
+        top: 0;
+        left: 0;
+        float: left;
+    } 
+    .chat-row.row2.male-guide-expression-5 .chat-icon-block{
+       
+    }
+    .chat-row.row2.male-guide-expression-5 .chat-callout-block{
+        /*width: 330px;
+        position: relative;
+        min-width: 330px;
+        float: none;*/
+    }
+    .padding-right {
+        padding-right: 0;
+    }
+    .chat-row.row2.male-guide-expression-5 .after-callout-extra {
+        left: -16px;
+        right: 0;
+        margin: 0 auto;
+        transform: rotate(0deg);
+        top: -40px;
+    }
+}
+/* chat section Expression 5 */
+
+/* chat section Expression 6*/
+.chat-row.row2.male-guide-expression-6 .callout {
+    margin-top: 10px;
+}
+.chat-row.row2.male-guide-expression-6 .show-for-desktop{
+    background-position: -371px -669px;
+    width: 243px !important;
+}
+.chat-row.row2.male-guide-expression-6 .show-for-mobile{
+    background-position: -369px -669px;
+    width: 146px;
+    height: 264px;
+}
+.chat-row.row2.male-guide-expression-6 .chat-icon-block{
+/*    width: 382px;
+    height: 403px;
+    position:absolute;
+    margin-left: calc(100% - 243px);*/
+}
+.chat-row.row2.male-guide-expression-6 .chat-callout-block{
+    /*width: calc(100% - 187px);
+    min-width: 47%;*/
+}
+
+.padding-right{
+    padding-right: 50px;
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-6{
+        min-height: 261px;
+        margin: 0 auto;
+        position: relative;
+        float: none;
+        min-width: 300px;
+    }
+    .chat-row.row2.male-guide-expression-6 .callout {
+        top: 0;
+        left: 0;
+        float: left;
+    }
+    /*.chat-row.row2.male-guide-expression-6 .chat-icon-block{
+        width: 219px;
+        position: absolute;
+        margin-left: calc(100% - 113px);
+        top: 20px;
+    }
+    .chat-row.row2.male-guide-expression-6 .chat-callout-block{
+        width: 330px;
+        position: relative;
+        min-width: 330px;
+        float: none;
+    }*/
+    .padding-right {
+        padding-right: 0;
+    }
+}
+/* chat section Expression 6 */
+
+/* chat section Expression 7 */
+.grid-x .columns {
+/*    text-align: center;
+*/}
+.chat-row.row2.male-guide-expression-7  {
+    min-height: 425px;
+    display: inline-block;
+    float: none;
+    text-align: left;
+}
+.chat-row.row2.male-guide-expression-7 .callout {
+    right: 0;
+    margin-top: 0;
+    width: 100%;
+    top: 50px;
+    max-width: 480px;
+}
+.male-guide-expression-7 .callout p {
+
+    max-width: 360px;
+
+}
+.chat-row.row2.male-guide-expression-7 .show-for-desktop{
+    background-position: 36px -452px;
+    width: 192px;
+    height: 428px;
+}
+.chat-row.row2.male-guide-expression-7 .show-for-mobile{
+    background-position: -1790px -10px;
+    width: 105px;
+    height: 259px;
+}
+.chat-row.row2.male-guide-expression-7 .chat-icon-block{
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+.chat-row.row2.male-guide-expression-7 .chat-callout-block{
+    width: calc(100% - 150px);
+}
+
+.padding-right{
+    padding-right: 50px;
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-7{
+        min-height: 262px;
+        max-width: 340px;    
+    }
+    .chat-row.row2.male-guide-expression-7 .callout {
+        right: auto;
+        margin-top: 0;
+        left: 0;
+        float: none;
+        width:100%;
+        top: 0;
+    }
+    .chat-row.row2.male-guide-expression-7 .chat-icon-block{
+        /*position: relative;*/
+        margin-left: calc(100% - 113px);
+    }
+    .chat-row.row2.male-guide-expression-7 .chat-callout-block{
+        top: 0;
+        width: calc(100% - 96px);
+        /*position: absolute;*/
+        min-width: auto;
+        left: 0;
+    }
+    .chat-row.row2.male-guide-expression-7 .callout.after-callout::after {
+        right: -42px;        
+    }   
+    .after-callout-extra{
+        display:block;
+    }
+}
+/* chat section Expression 7 */
+
+/* chat section Expression 8 */
+.chat-row.row2.male-guide-expression-8  {
+    min-height: 425px;
+    display: inline-block;
+    float: none;
+    text-align: left;
+}
+.chat-row.row2.male-guide-expression-8 .callout {
+    right: 0;
+    margin-top: 0;
+    width: 100%;
+    top: 50px;
+    max-width: 480px;
+}
+.male-guide-expression-8 .callout p {
+
+    max-width: 360px;
+
+}
+.chat-row.row2.male-guide-expression-8 .show-for-desktop{
+    background-position: 36px -452px;
+    width: 192px;
+    height: 428px;
+}
+.chat-row.row2.male-guide-expression-8 .show-for-mobile{
+    background-position: -1790px -10px;
+    width: 105px;
+    height: 259px;
+}
+.chat-row.row2.male-guide-expression-8 .chat-icon-block{
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+.chat-row.row2.male-guide-expression-8 .chat-callout-block{
+    width: calc(100% - 150px);
+}
+.chat-row.row2.male-guide-expression-8 .callout.after-callout::after {
+
+    top: 29px;
+    bottom: auto;
+    height: 20px;
+}
+.padding-right{
+    padding-right: 50px;
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-8{
+        min-height: 262px;
+        max-width: 340px;    
+    }
+    .chat-row.row2.male-guide-expression-8 .callout {
+        right: auto;
+        margin-top: 0;
+        left: 0;
+        float: none;
+        width:100%;
+        top: 0;
+    }
+    .chat-row.row2.male-guide-expression-8 .chat-icon-block{
+        /*position: relative;*/
+        margin-left: calc(100% - 113px);
+    }
+    .chat-row.row2.male-guide-expression-8 .chat-callout-block{
+        top: 0;
+        width: calc(100% - 96px);
+        /*position: absolute;*/
+        min-width: auto;
+        left: 0;
+    }
+    .chat-row.row2.male-guide-expression-8 .callout.after-callout::after {
+        content: '';
+        display:block;
+        top: 28px;
+        right: -32px;        
+    }   
+    .after-callout-extra{
+        display:block;
+    }
+}
+/* chat section Expression 8 */
+
+/* chat section Expression 9 */
+.chat-row.row2.male-guide-expression-9 .show-for-desktop .chat-icon{
+    background-position: -199px -456px;
+	width: 245px;
+	height: 177px;
+}
+.chat-row.row2.male-guide-expression-9 .show-for-mobile .chat-icon{
+    background-position: -594px -561px;
+	width: 130px;
+	height: 96px;
+}
+.chat-row.row2.male-guide-expression-9 .chat-icon-block{
+    width:245px;
+}
+.chat-row.row2.male-guide-expression-9 .chat-callout-block{
+    width: calc(100% - 255px);
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-9{
+        width: 330px;
+        max-width: 100%;
+        float:none;
+    }
+    .chat-row.row2.male-guide-expression-9 .callout,
+    .chat-row.row2.male-guide-expression-9 .chat-callout-block, 
+    .chat-row.row2.male-guide-expression-9 .chat-icon-block{
+        width: 100%;
+    }
+}
+/* chat section Expression 10 */
+.chat-row.row2.male-guide-expression-10 .show-for-desktop .chat-icon{
+    background-position: -422px -643px;
+	width: 177px;
+	height: 177px;
+}
+.chat-row.row2.male-guide-expression-10 .show-for-mobile .chat-icon{
+    background-position: -9px -672px;
+	width: 99px;
+	height: 99px;
+}
+.chat-row.row2.male-guide-expression-10 .chat-icon-block{
+    width:177px;
+}
+.chat-row.row2.male-guide-expression-10 .chat-callout-block{
+    width: calc(100% - 220px);
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-10{
+        width: 330px;
+        max-width: 100%;
+        float:none;
+    }
+    .chat-row.row2.male-guide-expression-10 .callout,
+    .chat-row.row2.male-guide-expression-10 .chat-callout-block, 
+    .chat-row.row2.male-guide-expression-10 .chat-icon-block{
+        width: 100%;
+    }
+}
+/* chat section Expression 11 */
+.chat-row.row2.male-guide-expression-11 .show-for-desktop .chat-icon{
+    /*background-position: -200px -643px;*/
+    width: 211px;
+    height: 177px;
+	margin-top: 20px;
+}
+.chat-row.row2.male-guide-expression-11 .show-for-mobile .chat-icon{
+    /*background-position: -835px -561px;*/
+	width: 117px;
+	height: 98px;
+}
+.chat-row.row2.male-guide-expression-11 .chat-icon-block{
+    width:211px;
+}
+.chat-row.row2.male-guide-expression-11 .chat-callout-block{
+    width: calc(100% - 215px);
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row2.male-guide-expression-11{
+        width: 330px;
+        max-width: 100%;
+        float:none;
+    }
+    .chat-row.row2.male-guide-expression-11 .callout,
+    .chat-row.row2.male-guide-expression-11 .chat-callout-block, 
+    .chat-row.row2.male-guide-expression-11 .chat-icon-block{
+        width: 100%;
+    }
+}
+
+
+/* chat section Francis Expression 4 */
+.chat-row.row1.francis-guide-expression-4 .show-for-desktop .chat-icon{
+    background-position: -426px -10px;
+	width: 177px;
+	height: 178px;
+}
+.chat-row.row1.francis-guide-expression-4 .show-for-mobile .chat-icon{
+    background-position: -289px -293px;
+	width: 109px;
+	height: 110px;
+}
+.chat-row.row1.francis-guide-expression-4 .chat-icon-block{
+    width: 177px;
+    float: left;
+}
+.chat-row.row1.francis-guide-expression-4 .chat-callout-block{
+    width: calc(100% - 220px);
+    margin-left: 40px;
+}
+@media screen and (max-width: 767px) {
+    .chat-row.row1.francis-guide-expression-4{
+        width: 330px;
+        max-width: 100%;
+        float:none;
+    }
+    .chat-row.row1.francis-guide-expression-4 .callout,
+    .chat-row.row1.francis-guide-expression-4 .chat-callout-block, 
+    .chat-row.row1.francis-guide-expression-4 .chat-icon-block{
+        width: 100%;
+        margin-left: 0;
+    }
+}
