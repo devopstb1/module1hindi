@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Accion: Getting Out of Debt</title>
+        
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame Remove this if you use the .htaccess -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script type="text/javascript">
+            
+        </script>
+        <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="data:,">
+        <!-- CSS Includes -->
+		<link rel="stylesheet" type="text/css" href="css/foundation.css" />
+       <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/framework.css" />
+        <link rel="stylesheet" type="text/css" href="css/avatar.css" />
+
+        <!-- Custom Ovante CSS -->
+		<link rel="stylesheet" type="text/css" href="css/ovante.css" />
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!---Media files(videojs)---->
+        <script src="js/libs/jquery-3.5.1.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/js/fontawesome.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+
+
+
+
+	
+<style type="text/css">
+
+.cell {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+.circle {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: whiteSmoke;
+  box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;
+}
+.square {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background: whiteSmoke;
+  box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;
+}
+
+.gelatine {
+  animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+.spin {
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.elastic-spin {
+  animation: elastic-spin 1s infinite ease;
+}
+@keyframes elastic-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(720deg); }
+}
+
+.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+
+.flash {
+  animation: flash 500ms ease infinite alternate;
+}
+@keyframes flash {
+	from { opacity: 1; }	
+	to { opacity: 0; }
+}
+
+.hithere {
+  animation: hithere 1s ease infinite;
+}
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.grow {
+  animation: grow 2s ease infinite;
+}
+@keyframes grow {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.shake {
+  animation: shake 2s ease infinite;
+}
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+
+.swing {
+	transform-origin: top center;
+	animation: swing 2s ease infinite;
+}
+@keyframes swing {
+	20% { transform: rotate(15deg); }	
+	40% { transform: rotate(-10deg); }
+	60% { transform: rotate(5deg); }	
+	80% { transform: rotate(-5deg); }	
+	100% { transform: rotate(0deg); }
+}
+
+.wobble {
+  animation: wobble 2s ease infinite;
+}
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-25%) rotate(-5deg); }
+  30% { transform: translateX(20%) rotate(3deg); }
+  45% { transform: translateX(-15%) rotate(-3deg); }
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); }
+}
+
+.bounce-in {
+  animation: bounce-in 2s ease infinite;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+
+.bounce-in-right {
+  animation: bounce-in-right 2s ease infinite;
+}
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.bounce-out {
+  animation: bounce-out 2s ease infinite;
+}
+@keyframes bounce-out {
+  0% { transform: scale(1); }
+  25% { transform: scale(.95); }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.3);
+  } 
+}
+
+.bounce-out-down {
+  animation: bounce-out-down 2s ease infinite;
+}
+@keyframes bounce-out-down {
+  0% { transform: translateY(0); }
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+
+
+/* chat section */
+.grid-x .columns {
+    text-align: center;
+}
+#content_wrapper {
+    min-height: calc(100% - 440px);
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.highlighttext{
+    color: #fe6800;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
+.optioncontainer{
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.optionbox{
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    cursor:pointer;
+    box-shadow: 2px 7px 8px rgba(0,0,0,.4);
+}
+
+.optiontext p{
+    text-align: left;
+    font-size: 16px;
+}
+
+.toparea{
+    width: 100%;
+    display: inline-block; 
+	background: #fff;
+	padding:0px 10px 0px 10px;
+}
+.checkbox-container {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0 auto;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    /* height: 0; */
+    /* width: 0; */
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    right: 0px;
+    z-index: 9;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: relative;
+    top: 30px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #7b7470;
+    display: block;
+  }
+  .toparea{
+        
+    display: table;
+    }  
+    
+    
+ 
+    
+    .optionbox .optiontext{
+        margin-bottom: 0;
+        display: table-cell;
+        vertical-align: middle;
+        max-width: 420px;
+		width: 40%;
+    text-align: center;
+    min-width: 100px;
+    }
+  /* On mouse-over, add a grey background color */
+  
+  .optionbox {
+    width: 100%;
+	margin-bottom: 0px !important;
+}
+
+
+.checkbox-container {
+    height: 30px;
+   
+   
+     position: relative;
+}
+ .optioncontainer .columns.small-12{
+    margin-bottom: 20px;
+}
+
+.optiontext {
+    padding: 10px;
+    color: #000;
+    margin-bottom: 20px;
+    display: table;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 10px 0px 10px 10px;
+}
+
+@media(min-width:640px) and (max-width:850px){
+    .quiz-section {
+        
+        padding: 20px 40px;
+    }
+}
+
+.icon{
+  display: block;
+}
+button#guide_popup_close {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+}
+.summary-panel {
+    padding: 40px;
+}
+.summary_icon{
+    background-position: -131px -10px;
+    width: 89px;
+    height: 89px;
+    display: block;
+    margin: 0 auto;
+}
+.star_icon{
+  background-position: -11px -11px;
+  width: 105px;
+  height: 103px;
+  display: block;
+}
+.sign_icon{
+    background-position: -228px -16px;
+    width: 112px;
+    height: 58px;
+    display: block;
+    position: relative;
+    bottom: -13px;
+}
+div#summarytext-1, #summarytext-4 ,  #summarytext-5{
+    font-size: 50px;
+    color: #fe6800;
+    text-align: center;
+    padding: 5px 0;
+}
+#summarytext-4{
+    padding: 50px 0;
+}
+div#summarytext-2 {
+    font-size: 20px;
+    color: #2293b5;
+    text-align: center;
+    padding: 5px 0 0;
+}
+div#summarytext-3 {
+    font-size: 20px;
+    color: #fe6800;
+    text-align: center;
+    padding: 5px 0 36px 0;
+}
+
+#btn_continue {
+    width: 200px;
+}
+
+
+.footer .date, .footer .signature{
+    color: #47b7eb;
+    font-size: 18px;
+    padding: 20px 0;
+    text-align: center;
+
+}
+span.logo-ovanto, span.logo-accion{
+    position: absolute;
+    display: block;
+    height: 25px;
+}
+span.logo-ovanto {
+    width: 123px;
+    background-position: -350px -36px;
+    top: 40px;
+    right: 40px;
+}
+span.logo-accion {
+    width: 107px;
+    background-position: -489px -36px;
+    top: 40px;
+    left: 40px;
+}
+.footer-data .logo-o-ovanto{
+    display: block;
+    width: 283px;
+    height: 260px;
+    bottom: 0;
+    background-position: -610px -12px;
+    left: calc( 50% - 141px);
+    position: absolute;
+}
+
+.footer-data .columns {
+    text-align: center;
+}
+
+.footer-data{
+    margin-top: 30px !important;
+    margin-bottom: -57px !important;
+    color: #2293b5
+}
+div#summary_popup:before{
+    content: '';
+    display: block;
+    height: 100%;
+    width:100%;
+    /*position: fixed;*/
+    top:0;
+    left: 0;
+}
+
+.submit_btn_section.text-center {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+ @media screen and (max-width: 767px) {
+     div#summary_popup {
+        width: 97%;
+        left: 1.5%;
+        min-height: 380px;
+        top: calc(50% - 190px);
+    }
+    div#summarytext-1, #summarytext-4 ,  #summarytext-5{
+        font-size: 30px;
+    }
+    div#summarytext-2, div#summarytext-3{
+        font-size: 15px;
+    }    
+    .summary-panel {
+        padding: 40px 10px !important;
+    }
+    .user_detail_form {
+        width: 100% !important;
+    } 
+    #btndownloadCertificate .icon{
+        right: 20px !important;
+    }    
+    #btndownloadCertificate {
+        width: 333px !important;
+        padding-left: 20px !important;
+        font-size: 20px;
+    }        
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 815px)
+and (orientation : landscape) {
+    .popup-container {
+        height: 360px !important;
+        top: calc(50% - 180px) !important;
+    }
+    div#summarytext-1, #summarytext-4 ,  #summarytext-5{
+        font-size: 30px;
+    }
+    div#summarytext-2, div#summarytext-3{
+        font-size: 15px;
+    }       
+}
+
+
+
+</style>
+
+<style>
+
+.videoplayer {
+  position: relative;
+  display: block;
+}
+.videoplayer video {
+  max-width: 100%;
+  max-height: 100%;
+}
+.videoplayer .controls {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  bottom: 0;
+  background-color: #eee;
+}
+.videoplayer .controls .progress {
+  background-color: #333;
+}
+.videoplayer .controls .progress .progress-bar {
+  transition: none !important;
+  background-color: #666;
+}
+.videoplayer .controls.controls-light .bi {
+  color: #2b2b2b;
+}
+.videoplayer .controls.controls-dark {
+  background-color: #2b2b2b;
+}
+.videoplayer .controls.controls-dark .bi {
+  color: #eee;
+}
+.videoplayer .controls.controls-dark .progress {
+  background-color: #ccc;
+}
+.videoplayer .controls.controls-dark .progress .progress-bar {
+  background-color: #999;
+}
+.videoplayer .controls.auto-hide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0.5s;
+}
+.videoplayer .controls button > *,
+.videoplayer .controls .btn > * {
+  pointer-events: none !important;
+}
+.videoplayer .overlay {
+  position: absolute;
+  z-index: 300;
+  top: 0;
+  left: 0;
+}
+.videoplayer .overlay .title {
+  font-size: inherit;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.videoplayer .dropup-volume {
+  position: absolute !important;
+  bottom: calc(100% + 5px) !important;
+  padding: 0.75rem 1rem;
+  transform: none !important;
+  min-width: inherit;
+}
+.videoplayer .dropup-volume .form-range {
+  -webkit-appearance: slider-vertical;
+  width: 1rem !important;
+  height: 100% !important;
+}
+.videoplayer:hover .controls.auto-hide {
+  opacity: 1;
+}
+
+.tooltip {
+  z-index: 1400;
+}
+header#top_band {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #175F75;
+    height: 60px;
+}
+
+
+header#top_band {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #175F75;
+	height:60px;
+}
+header#top_band .topRow{
+    position: relative;
+    height:60px;
+    margin:auto; 
+    padding-top: 0px;  
+}
+.header-title-area{
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    max-width:70%;
+}
+.top-left-wrapper {
+    float: left;
+    position: relative;
+    height: 100%;
+	margin-left:32px;
+}
+.top-mid-wrapper {
+    float: left;
+    width: calc(100% - 158px);
+    height: 50px;
+}
+.top-right-wrapper {
+    float: right;
+    width: auto;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    display:inline-block;
+    padding-right: 20px;
+  /*  display: none;*/
+}
+.top-left-menu,
+.top-right-menu {
+    cursor: pointer;
+    background-position: -10px -87px;
+	width: 23px;
+	height: 19px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+header#top_band.day .audiobtn {
+	width: 36px;
+    height: 30px;
+    float: left;
+    margin-top: 13px;
+    margin-left: 85%;
+}
+
+header#top_band.day .audiomutebtn {
+	width: 36px;
+    height: 30px;
+    float: left;
+    margin-top: 13px;
+    margin-left: 72%;
+}
+header#top_band.day .topic-title {
+    color: #3b322e;
+}
+header#top_band.night .topic-title {
+    color: #FFFFFF;
+}
+
+header#top_band .logo {
+    background-position: -372px -10px;
+    width: 140px;
+    height: 33px;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    float: left;
+    cursor: pointer;
+}
+header#top_band .logo.logo-mobile {
+    background-position: -371px -53px;
+    width: 113px;
+    height: 26px;
+    display:none;
+    float: left;
+}
+#O-icon-desktop{
+    display: block;
+    background-position:  -191px -8px;
+	width: 172px;
+	height: 191px;
+}
+#O-icon-desktop,
+#O-icon-mobile{
+    float: right;
+}
+#O-icon-mobile{
+    display: none;
+}
+.headerPanel > .grid-x > .columns {
+    position: relative;
+}
+@media screen and (max-width: 40em) {
+    #ios_play #logo-desktop{
+        
+        display: none !important;
+    }
+    #ios_play #logo-mobile{
+       
+        display: block !important;
+    }
+    #O-icon-desktop{
+        display: none;
+    }
+    #O-icon-mobile{
+        background-position: -193px -11px;
+   
+    display: block;
+    width: 168px;
+    height: 186px;
+    }
+    header#top_band .logo {
+        display:none;
+    }
+    header#top_band .logo.logo-mobile {
+        display:block;
+    }
+	.page-heading {
+		font-size:20px !important;
+	}
+	.course-heading{
+		font-size:23px !important;
+	}
+    #O-icon-desktop{
+        display: none;
+    }
+    #O-icon-mobile{
+        background-position: -193px -11px;
+        display: block;
+        width: 168px;
+        height: 186px;
+    }
+    header#top_band .logo {
+        display:none;
+    }
+    header#top_band .logo.logo-mobile {
+        display:block;
+    }
+}
+/* Top header arc panel */
+
+.headerPanel{
+    height: 200px;
+    width: 100%;
+    background: #175F75;
+}
+.headerPanel .grid-x{
+    height: 100%;
+}
+.headerPanel .grid-x .columns{
+    position: relative;
+}
+
+.curve-container{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+}
+.curve-container .curved {
+    width: 110%;
+    /*height: 132%;
+    bottom: -35%;*/
+	height: 300%;
+	bottom: 5%;
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+
+#bottom_band .curved {
+    border-color: #fceee3 ;
+}
+
+#top_band .curved {
+    border-color: #ffffff; /*Nehal removed transpernt and added below image for iPad TBD for bottom band*/
+    /*background-image:url('images/common/blank_curve.png');*/
+   border-radius:70% /70% 70%;
+   -webkit-border-radius: 70% /70% 70%;
+   -moz-border-radius: 70% /70% 70%;
+}
+.curved{
+    display: table;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height:100%;
+    border: 5px solid;
+    border-radius: 500px/20px 20px 0 0;
+    -webkit-border-radius: 500px/20px 20px 0 0;
+    -moz-border-radius: 500px/20px 20px 0 0;
+}
+.o-wrapper
+{
+	position: absolute;
+    top: 16px;
+    right: 80px;  
+    z-index: 1;
+    pointer-events: none;  
+}
+.page-heading-img{
+	background-position: -88px -631px;
+	width: 139px;
+	height: 153px;
+}
+.page-heading.step-heading{
+    font-family: 'UB';
+	width:100%;
+	position:relative;
+	text-align: center;
+}
+.header-title{
+	position :relative;
+	z-index:2;
+}
+.page-heading {
+    font-size: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: "UR";
+}
+.course-heading {
+	font-size: 28px;
+	color: #feea67;
+	text-align: left;
+	font-family: 'UR';
+	padding: 10px 0px;
+}
+#panel_audiocontrols{
+    width: 42px;
+    height: 42px;
+    right: 20px;
+    position: absolute;
+    z-index: 2;
+}
+#btn_mute, #btn_pause{
+    background-position: -285px -19px;
+    width: 42px;
+    height: 42px;
+}
+#btn_play{
+    background-position: -346px -20px;
+    width: 41px;
+    height: 41px;
+}
+#btn_home{
+    background-position: -883px -21px;
+    width: 41px;
+    height: 41px;
+    position: relative;
+    top: 50%;
+    transform: translate(11px, -50%);
+}
+#btn_audioResume {
+    background-position: -406px -20px;
+    width: 41px;
+    height: 41px;    
+}
+
+/* Workaround for iphone/ipad ( version about 13 ) mute and unmute issue */
+
+.ios-13-above #btn_unmute {
+    display: none !important;
+}
+.ios-13-above #btn_mute {
+    display: none !important;
+}
+/********************************************************/
+
+@media screen and (max-width: 767px) {
+    .page-heading-img {
+        background-position: -237px -631px;
+        width: 123px;
+        height: 136px;
+    }
+    .headerPanel {
+        padding-top: 0;
+    }
+    .text-block-img{
+        display: table-cell;
+        margin: 0;
+        vertical-align: middle;
+        text-align: left;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .headerPanel {
+        height: 230px;
+    }
+    header#top_band .topRow {
+        height: 40px;
+    }
+    .headerPanel .l-panel {
+        padding-top: 10px;
+    }
+    .curve-container {
+        bottom: 5px;
+    }
+}
+@media screen and (max-width: 639px) {
+    .header-title-area {
+        float: left;
+        max-width:60%;
+    }
+    .o-wrapper {
+        top: 30px;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .o-wrapper {
+        top: 30px;
+        right: 16px;
+    }
+    header#top_band .topRow{
+        height: 43px;
+        padding-top: 16px;
+    }
+    .top-left-wrapper {
+        margin-left: 16px;
+    }
+    header#top_band .logo#logo-desktop{
+        display: none;
+    }
+    header#top_band .logo.logo-mobile{
+        display: block;
+    }
+	#panel_audiocontrols {
+		margin-right: -10px;
+		margin-top: -8px;
+	}
+	.course-heading{
+        padding: 10px 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .header-title-area {
+        float: left;
+    }
+}
+@media screen and (min-width: 1024px){
+    .course-heading {
+        padding: 0 0 10px 0;
+    }
+}
+/* Top Band Ends */
+.header-icon {
+    background: url(images/common/sprite_m2_header.png);
+    background-position-x: 0%;
+    background-position-y: 0%;
+}
+.ui-skin, .page-icon {
+    background: url(images/common/sprite_common.png);
+}
+.tis-btn {
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+.page-heading-img {
+    background-position: -88px -631px;
+    width: 139px;
+    height: 153px;
+}
+.o-wrapper {
+    position: absolute;
+    top: 16px;
+    right: 80px;
+    z-index: 1;
+    pointer-events: none;
+}
+.desc_icon {
+    background: url(images/common/sprite_icons_module1-01.png);
+}
+/* Bottom Band Start */
+#bottom_band {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 70px;
+    display: block;
+    background: #ffffff;
+}
+#bottom_band.iphone1 {
+    margin-bottom:75px;
+}
+#navigation_band {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 20px;
+    height: 40px;
+}
+#bottom_band.iphone2 {
+    margin-bottom:0;
+}
+#bottom_band.ipad {
+    margin-bottom:30px;
+}
+#bottom_band.ipad .shareiconpanel{
+    top: 20px;
+    bottom: auto;
+}
+.curve-parentContainer{
+	position: relative;
+	width: 100%;
+	display: block;
+	height: 70px;
+	overflow: hidden;
+}
+.BG-pink{
+    background:#fceee3;
+}
+.BG-white{
+    background: #ffffff;
+}
+.BG-green{
+    background: #1bbd66;
+}
+.BG-blue{
+    background: #fe6800;
+}
+.BG {
+    background: #fe6800;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+	box-shadow: 2px 7px 8px rgb(0 0 0 / 40%);
+	float: left;
+}
+.temp_img{
+    width: 50%;float: left;
+}
+.temp_text{
+    background: #fff;padding: 10px;text-align: center;
+    float: left;
+    width: 50%;
+    padding: 10% 2% 3% 0%;
+    height: 100%;
+}
+@media only screen and (max-width: 600px){
+.temp_img{
+    width: 100%;float: left;
+}
+.questiontext {
+    text-align: center;
+}
+.temp_text{
+    background: #fff;padding: 10px;text-align: center;
+    float: left;
+    width: 100%;
+    padding: 10% 4% 3% 4%;
+    height: 100%;
+}
+}
+
+
+
+.copyright-text{
+    display: block;
+    position: relative;
+    color: #7b7470;
+    z-index: 10;
+    font-size: 0.77em;
+    text-align: center;
+    width: 100%;
+}
+
+
+#btn_previous{
+    width: 92px;
+    height: 66px;
+    cursor: pointer;
+    background: rgba(115,203,229,0.3);
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.7);
+} 
+#btn_previous:hover{
+   
+    box-shadow: none;
+} 
+#btn_previous .icon{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    background-position: -20px -20px;
+	width: 12px;
+	height: 14px;
+}
+#btn_previous.disabled{
+    background-color: #f3f2f2;
+} 
+#btn_previous.disabled .icon{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    background-position: -20px -20px;
+	width: 12px;
+    height: 14px;
+    opacity: 0.5;
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+}
+#btn_next{
+    background: rgba(254,104,0,1);
+    width: 212px;
+    height: 66px;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 18px;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 30px;
+    max-width: 100%;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.7);
+}
+
+#btn_next:hover, 
+#btn_next:focus{
+    
+    box-shadow: none;
+}
+#btn_next .icon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 41px;
+    margin: auto 0;
+    background: url('images/common/sprite_common.png') no-repeat;
+    background-position: -51px -20px;
+    width: 12px;
+    height: 14px;
+}
+
+#btn_next.disabled .icon{
+    background : #f3f2f2;
+}
+.l-container,
+.r-container,
+.m-container{
+    position:relative;
+    /*width:50%;*/
+    float:left;
+    text-align:center;
+}
+.l-container {
+    text-align: left;
+    width: calc(100% - 485px);
+    text-align: left;
+}
+.r-container{
+    text-align: right;
+    float: right;
+	margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+    
+    
+    button#btn_next .continue_text{
+        display: block;
+    }
+    button#btn_next {
+        width: 160px;
+		height: 40px;
+    }
+    #btn_next .icon{
+        right: 28px;
+    }
+	button#btn_previous{
+	       width: 66px;
+           height: 40px;
+	}
+	button#btn_previous img{
+	      height: 40px;
+	}
+	
+	.callout.after-callout::after {
+    top: -62%;
+    transform: scaleX(-1) rotate(307deg);
+    border: 18px solid transparent;
+    border-left: 51px solid #e9f7fb;
+    content: '';
+    width: 127px;
+    position: absolute;
+    bottom: auto !important;
+	}
+	.video_row{
+		width:100% !important;
+	}
+	.chat-row.row2 .callout.after-callout::after
+	{
+		display:none;
+	}
+	
+   
+}
+@media only screen and (max-width: 600px) {
+  .icon_smile{
+    width: 100px !important;
+    float: left;
+	}
+	.optiontext{
+    width: 100% !important;
+    /*float: left;*/
+	}
+	.chat-icon-block {
+    position: relative;
+    width: auto;
+    float: none;
+    margin-right: 0px !important;
+    z-index: 3000000;
+	left:0px !important;
+	padding-top:0px;
+   
+    margin-top: 0% !important;
+    }
+	.optionbox .image {
+		max-width: 100% !important;
+		/*width: 100% !important;*/
+    }
+	
+	.callout.after-callout::after {
+    top: -62%;
+    transform: scaleX(-1) rotate(307deg);
+    border: 18px solid transparent;
+    border-left: 51px solid #e9f7fb;
+    content: '';
+    width: 127px;
+    position: absolute;
+    bottom: auto !important;
+	}
+	.optiontext p{
+	text-align:center !important;
+	}
+	.screentext4, .screentext5, .screentext6{
+	        background: #fceee3;
+			float: left;
+			width: 100%;
+	}
+	
+	.video_row{
+		width:100% !important;
+	}
+	.chat-row.row2 .callout.after-callout::after
+	{
+		display:none;
+	}
+}
+/* Bottom Band End */
+button {
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  line-height: 1;
+  cursor: auto;
+  }
+  [data-whatinput='mouse'] button {
+    outline: 0; }
+	
+	.grid-x .columns {
+    margin: 0 auto;
+}
+@media print, screen and (min-width: 64em)
+.grid-x > .large-10 {
+    width: 83.33333%;
+}
+.video_row {
+    height: 100%;
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    float: none;
+    cursor: pointer;
+}
+
+
+
+
+.page-bg {
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+    display: inline-block;
+    overflow-x: hidden;
+    color: #3b322e;
+    background-color: #fff;
+    height: auto;
+    padding-bottom: 0px;
+}
+.hidden{ display:none;}
+.hidden1{ display:none;}
+.hidden2{ display:none;}
+
+.questiontext{
+    text-align: left;
+    padding-bottom: 10px;
+}
+</style>
+
+
+
+    </head>
+    <body>
+	
+	<div class="container">
+	<div class="row">
+	<div class="columns small-12">
+        
+
+        <div id="application_wrapper" class="">
+            <div id="ios_play" class="text-center hide">
+                
+                    <div class="logo_start_screen">
+                            <div id="logo-desktop" class="logo flash-page-icon"></div>
+                            <div id="logo-mobile" class="logo logo-mobile header-icon"></div>
+                            <div class="start_btn">
+                                <p><button class="ios-play-btn">Start</button></p>
+                            </div>
+                    </div>
+                    
+                </div>
+            <div id="application">
+                
+               
+
+                
+
+                <!-- AJAX Page Wrapper -->
+                <header id="top_band" class="">
+	<div class="topRow">
+		<div class="top-left-wrapper">
+			<div id="logo-desktop" class="logo header-icon"></div>
+			<div id="logo-mobile" class="logo logo-mobile header-icon"></div>
+			<button type="button" id="btn_home" class="ui-skin tis-btn ui-home-btn class_override" aria-role="button" role="button" data-available="true" aria-labelledby="" aria-hidden="false"></button>
+
+		</div>
+		
+		
+	</div>
+	
+</header>
+<div id="content_wrapper">
+<div style="display:none;">
+    <div id="length">Duration:</div>
+    <div id="source">Source:</div>
+    <div id="status" style="color:red;">Status: Loading</div>
+    <hr>
+    <h2>Control Buttons</h2>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="restart">Restart</button>
+    <hr>
+    <h2>Playing Information</h2>
+    <div id="currentTime">0</div>
+</div>
+
+<input type="hidden" id="privious_id" value="0">
+<input type="hidden" id="next_id" value="1">
+                   
+
+                    <!-- The UI Top Band gets appended here -->
+                    <section id="content" role="main" aria-live="polite" tabindex="-1">
+                        <!-- The Page Content gets loaded here -->
+                    <section id="pagecontainer_cw01_cw01_pg03" class="row" style="display: block;">
+					<!-- The ID below for the root div tag wil be replaced dynamically by the Pages GUID -->
+					<div id="cw01_cw01_pg03" class="pg01 tis-page">
+						<div class="page-bg" id="slide_page">
+							
+							  <div class="section quiz-section">
+            
+                    <div class="grid-x">
+                       <div class="columns small-11 large-8 medium-10 activity-area">
+                            
+                           
+                                    <div class="BG">
+                                        <div class="" style="float: left;width: 100%;background: #fff;">
+                                            <div class="temp_img">
+												<img src="resources/cover/asset1.png">
+											</div>
+                                         
+                                            <div class="temp_text" >
+												<div class="txt1 questiontext animate__animated animate__bounceIn delay-1 animate__slower" style="
+    text-align: center;"><span class="highlighttext txt1">आइये, विस्तार से जानें डिजिटल भुगतान के बारे में।</span></div>
+												<div>
+																		
+																		<span><button onclick="gonext();"  id="btn_next11" type="button" rel="video" style="background: rgba(254,104,0,1);
+						width: 130px;
+    height: 50px;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 18px;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 4px;
+						max-width: 100%;
+						box-shadow: 2px 3px 5px rgb(0 0 0 / 70%);">शुरु करें </button></span>
+																	</div>
+											</div>
+                                            
+                                        </div>
+                                    </div>
+						</div>
+						
+                    
+						
+				   </div>
+					
+					
+					
+    </div>	
+    
+					    </div>
+
+					</div>
+				</section>
+			</section>
+                    <!-- The UI Bottom Band gets appended here -->
+                </div>
+
+       <div id="bottom_band" class="bottom-band">
+	<div id="navigation_band">    
+    <div class="curve-parentContainer">
+        <div class="curved BG-pink">
+            <div class="shareiconpanel">
+                
+                <span class="copyright-text">Copyright © Accion 2021. All rights reserved.</span>
+            </div>
+            
+        </div>
+        
+    </div>
+    </div>
+</div>
+</div>
+</div>
+        </div>
+			</div>
+		</div>
+		 
+		
+
+    </body>
+<script>
+function gonext()
+{
+var audioElement = document.createElement('audio');
+	audioElement.setAttribute('src', 'resources/cover/cover.mp3');
+	audioElement.loop = false;
+	audioElement.play();
+	audioElement.addEventListener("timeupdate",function(){
+	    if(audioElement.currentTime>0 && audioElement.currentTime<3 )
+		{
+			
+			$(".txt1").addClass('animate__animated animate__bounceIn delay-4 animate__slower');
+			
+		}
+		if(audioElement.currentTime>4.9)
+		{
+		    $.blockUI({ 
+			css: { 
+				border: 'none', 
+				padding: '15px', 
+				backgroundColor: '#000', 
+				'-webkit-border-radius': '10px', 
+				'-moz-border-radius': '10px', 
+				opacity: .5, 
+				color: '#fff' 
+            } 
+			}); 
+			audioElement.pause();
+			audioElement.currentTime = 0;
+			//$("#btn_next").removeAttr('disabled');
+	        //$("#btn_next").addClass('shake');
+			$("#btn_next11").addClass('shake');
+			var id=parseInt($('#next_id').val());
+			var url='slide'+id+'_new.html';
+			//setTimeout(function() {
+				$.ajax({
+					url: url,
+					cache: false,
+					dataType : 'html',
+					success:function(responsedata){
+					
+						 $('#slide_page').html(responsedata);
+						 setTimeout($.unblockUI, 1000); 
+						 $('#next_id').val(id+1);
+						 $('#privious_id').val(id-1);
+					}
+					
+				});
+			//}, 5000);
+		}
+	});
+}
+$(function () {
+    
+    $('#application_wrapper').on('click', '#btn_next', function() { // code
+	var type=$(this).attr('rel');
+	var id=parseInt($('#next_id').val());
+	//id=9;
+	//type='video';
+	var url='slide'+id+'_new.html';
+        $.ajax({
+            url: url,
+			cache: false,
+            dataType : 'html',
+			success:function(responsedata){
+			     $('#slide_page').html(responsedata);
+			     $('#next_id').val(id+1);
+				 $('#privious_id').val(id-1);
+            }
+			
+        });
+    });
+	
+	
+	$('#application_wrapper').on('click', '#btn_previous', function() { 
+	
+	var type=$(this).attr('rel');
+	var id=parseInt($('#privious_id').val());
+	//id=8;
+	//type='video';
+	
+	var url='slide'+id+'_new.html';
+        $.ajax({
+            url: url,
+			cache: false,
+            dataType : 'html',
+			success:function(responsedata1){
+			     
+			     $('#slide_page').html(responsedata1);
+			     $('#next_id').val(id+1);
+				 $('#privious_id').val(id-1);
+            }
+        });
+    });
+});
+</script>
+
+</html>
